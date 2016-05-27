@@ -28,6 +28,11 @@ console.log(bug.state);
 bug.eat('grass');
 console.log(bug.state);
 bug.rest();
+console.log(bug.actions());
+console.log(bug.is('hungry'));
+console.log(bug.can('eat'));
+console.log(bug.cannot('rest'));
+console.log(bug.transitions());
 ```
 
 Output:
@@ -40,4 +45,9 @@ full
 grass was too much!
 sick
 Phew
+['eat', 'rest']
+true
+true
+false
+{'eat': 'satisfied', 'rest': 'hungry'}
 ```
