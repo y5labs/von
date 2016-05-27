@@ -29,3 +29,15 @@ bug.eat('grass');
 console.log(bug.state);
 bug.rest();
 ```
+
+Output:
+
+```
+hungry
+I can survive, ate grass
+satisfied
+full
+grass was too much!
+sick
+Phew
+```
